@@ -20,6 +20,7 @@ public class JoinerTest {
         String join2 = Joiner.on("#").skipNulls().join(list2);
         //将null值替换
         String join3 = Joiner.on("#").useForNull("DEFFAULT").join(list2);
+
         System.out.println(join1);//java#scala#c++#guava
         System.out.println(join2);//java#scala#c++
         System.out.println(join3);//java#scala#c++#DEFFAULT
